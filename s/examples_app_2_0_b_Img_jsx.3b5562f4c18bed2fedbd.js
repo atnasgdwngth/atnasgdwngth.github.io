@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_ssr_webpack_plugin=self.webpackChunkreact_ssr_webpack_plugin||[]).push([["examples_app_2_0_b_Img_jsx"],{749:(e,s,a)=>{a.r(s),a.d(s,{default:()=>p});const c=a.p+"928f956d9c8ebcffb98a8e917154a81a.svg";var _=a(893);function p(){return(0,_.jsx)("img",{src:c})}}}]);

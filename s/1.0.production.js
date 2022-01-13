@@ -1,0 +1,1 @@
+module.exports={__VERSION__:"1.0.production",__ENTRIES__:{"a.node.js":"a.node.42bdaa5c9998e8da8f47.js"},__ROUTES__:[{pattern:"/a.node",entry:()=>"a.node"}]};

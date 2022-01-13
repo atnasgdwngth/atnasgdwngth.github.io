@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_ssr_webpack_plugin=self.webpackChunkreact_ssr_webpack_plugin||[]).push([["examples_app_3_0_Img_jsx"],{334:(e,s,_)=>{_.r(s),_.d(s,{default:()=>r});var a=_(786),p=_(893);function r(){return(0,p.jsx)("img",{src:a.Z})}}}]);

@@ -1,0 +1,1 @@
+module.exports={__VERSION__:"3.0.production",__ENTRIES__:{"index.node.js":"index.node.b6c9b42f409db193cf83.js"},__ROUTES__:[{pattern:"/(.*)",entry:()=>"index.node"}]};
