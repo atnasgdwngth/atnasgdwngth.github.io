@@ -2,88 +2,21 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./examples/app/3.0/App.jsx":
-/*!**********************************!*\
-  !*** ./examples/app/3.0/App.jsx ***!
-  \**********************************/
+/***/ "./examples/app/2.0/b/App.jsx":
+/*!************************************!*\
+  !*** ./examples/app/2.0/b/App.jsx ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "App": () => (/* binding */ App)
 /* harmony export */ });
-/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.css */ "./examples/app/3.0/App.css");
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common */ "./examples/app/3.0/common.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../App.css */ "./examples/app/2.0/App.css");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common */ "./examples/app/2.0/common.jsx");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _react_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../react.svg */ "./examples/app/react.svg");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
- // eslint-disable-next-line id-length
-
-
-
-const Img = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_1__.lazy)(() => __webpack_require__.e(/*! import() */ "examples_app_3_0_Img_jsx").then(__webpack_require__.bind(__webpack_require__, /*! ./Img */ "./examples/app/3.0/Img.jsx")));
-function App(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react__WEBPACK_IMPORTED_MODULE_1__.StrictMode, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Routes, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
-        path: "a.node",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_common__WEBPACK_IMPORTED_MODULE_5__.DivWrapper, {
-          flexDirection: "column",
-          align: "center",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react__WEBPACK_IMPORTED_MODULE_1__.Suspense, {
-            fallback: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-              children: "loading..."
-            }),
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Img, {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common__WEBPACK_IMPORTED_MODULE_5__.Code, { ...props,
-            to: "b.node"
-          })]
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
-        path: "b.node",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_common__WEBPACK_IMPORTED_MODULE_5__.DivWrapper, {
-          flexDirection: "row",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-            src: _react_svg__WEBPACK_IMPORTED_MODULE_2__["default"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common__WEBPACK_IMPORTED_MODULE_5__.Code, { ...props,
-            to: "a.node"
-          })]
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
-        path: "/*",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common__WEBPACK_IMPORTED_MODULE_5__.NotFound, {})
-      })]
-    })
-  });
-}
-
-/***/ }),
-
-/***/ "./examples/app/3.0/common.jsx":
-/*!*************************************!*\
-  !*** ./examples/app/3.0/common.jsx ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "DivWrapper": () => (/* binding */ DivWrapper),
-/* harmony export */   "Code": () => (/* binding */ Code),
-/* harmony export */   "StatusCodeContext": () => (/* binding */ StatusCodeContext),
-/* harmony export */   "NotFound": () => (/* binding */ NotFound)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Code_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Code.css */ "./examples/app/3.0/Code.css");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -91,79 +24,91 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const DivWrapperB = /*#__PURE__*/(0,styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(_common__WEBPACK_IMPORTED_MODULE_4__.DivWrapper).withConfig({
+  displayName: "App__DivWrapperB",
+  componentId: "sc-iwa7em-0"
+})(["img{margin:.5rem;}code{margin:.5rem;}"]); // eslint-disable-next-line id-length
 
-const DivWrapper = /*#__PURE__*/styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
-  displayName: "common__DivWrapper",
-  componentId: "sc-1tlo65s-0"
-})(["display:flex;flex-direction:", ";font-family:sans-serif;font-size:40px;align-items:center;justify-content:center;height:inherit;img{width:96px;height:96px;margin:.5rem;}code{text-align:", ";font-size:.5em;margin:.5rem;}"], props => props.flexDirection, props => props.align);
-function Code(props) {
-  const location = (0,react_router__WEBPACK_IMPORTED_MODULE_4__.useLocation)();
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("code", {
-    className: _Code_css__WEBPACK_IMPORTED_MODULE_1__["default"].code,
-    children: ["name: ", "react-ssr-webpack-plugin", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "server.url.href: ", props.url.href, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "__VERSION__: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-      href: `${__webpack_require__.p}${props.__VERSION__}.js`,
-      children: props.__VERSION__
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
-      to: `/${props.to}${location.search || ""}`,
-      children: props.to
-    })]
-  });
-}
-const Pre = /*#__PURE__*/styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].pre.withConfig({
-  displayName: "common__Pre",
-  componentId: "sc-1tlo65s-1"
-})(["font-family:monospace;font-size:initial;padding:13px 8px;line-height:initial;"]);
-const StatusCodeContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)( /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createRef)());
-function NotFound() {
-  const statusCode = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(StatusCodeContext);
-  const location = (0,react_router__WEBPACK_IMPORTED_MODULE_4__.useLocation)();
-  statusCode.current = 404;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(Pre, {
-    children: ["Cannot GET ", `${location.pathname}${location.search}`]
+const Img = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_1__.lazy)(() => __webpack_require__.e(/*! import() */ "examples_app_2_0_b_Img_jsx").then(__webpack_require__.bind(__webpack_require__, /*! ./Img */ "./examples/app/2.0/b/Img.jsx")));
+function App(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react__WEBPACK_IMPORTED_MODULE_1__.StrictMode, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(DivWrapperB, {
+      flexDirection: "row",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react__WEBPACK_IMPORTED_MODULE_1__.Suspense, {
+        fallback: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          children: "loading..."
+        }),
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Img, {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common__WEBPACK_IMPORTED_MODULE_4__.Code, { ...props,
+        href: "a.node"
+      })]
+    })
   });
 }
 
 /***/ }),
 
-/***/ "./examples/app/3.0/index.web.js":
-/*!***************************************!*\
-  !*** ./examples/app/3.0/index.web.js ***!
-  \***************************************/
+/***/ "./examples/app/2.0/b/index.web.js":
+/*!*****************************************!*\
+  !*** ./examples/app/2.0/b/index.web.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./examples/app/3.0/App.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./examples/app/2.0/b/App.jsx");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/profiling.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+ // if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker.register(new URL("./sw.js", import.meta.url), {"scope": "/b.node"});
+// }
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_0__.hydrateRoot(document.getElementById("root"), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_App__WEBPACK_IMPORTED_MODULE_2__.App, { ...globalThis.props
+}));
+
+/***/ }),
+
+/***/ "./examples/app/2.0/common.jsx":
+/*!*************************************!*\
+  !*** ./examples/app/2.0/common.jsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DivWrapper": () => (/* binding */ DivWrapper),
+/* harmony export */   "Code": () => (/* binding */ Code)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Code_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Code.css */ "./examples/app/2.0/Code.css");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_0__.hydrateRoot(document.getElementById("root"), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.BrowserRouter, {
-  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_App__WEBPACK_IMPORTED_MODULE_3__.App, { ...globalThis.props
-  })
-}));
+const DivWrapper = /*#__PURE__*/styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "common__DivWrapper",
+  componentId: "sc-1o9hep8-0"
+})(["display:flex;flex-direction:", ";font-family:sans-serif;font-size:40px;align-items:center;justify-content:center;height:inherit;img{width:96px;height:96px;margin:.5rem;}code{font-size:.5em;margin:.5rem;}"], props => props.flexDirection);
+function Code(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("code", {
+    className: _Code_css__WEBPACK_IMPORTED_MODULE_0__["default"].code,
+    children: ["name: ", "react-ssr-webpack-plugin", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "server.url.href: ", props.url.href, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "__VERSION__: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: `${__webpack_require__.p}${props.__VERSION__}.js`,
+      children: props.__VERSION__
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: `${props.href}${props.url.search || ""}`,
+      children: props.href
+    })]
+  });
+}
 
 /***/ }),
 
-/***/ "./examples/app/react.svg":
-/*!********************************!*\
-  !*** ./examples/app/react.svg ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "928f956d9c8ebcffb98a8e917154a81a.svg");
-
-/***/ }),
-
-/***/ "./examples/app/3.0/App.css":
+/***/ "./examples/app/2.0/App.css":
 /*!**********************************!*\
-  !*** ./examples/app/3.0/App.css ***!
+  !*** ./examples/app/2.0/App.css ***!
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -176,9 +121,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./examples/app/3.0/Code.css":
+/***/ "./examples/app/2.0/Code.css":
 /*!***********************************!*\
-  !*** ./examples/app/3.0/Code.css ***!
+  !*** ./examples/app/2.0/Code.css ***!
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -187,7 +132,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"code":"J0I7H9aIX55B_id67tTf"});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"code":"FaDczDYAnfDilHrvDCQZ"});
 
 /***/ })
 
@@ -298,7 +243,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + "d36d1bd96febf6d4dd88" + ".js";
+/******/ 			return "" + chunkId + "." + "7d0e9167330333985cd1" + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -384,7 +329,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "//assets.woodfung.dev/s";
+/******/ 		__webpack_require__.p = "//assets.woodfung.dev/s/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -395,7 +340,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"index.web": 0
+/******/ 			"b.web": 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = (chunkId, promises) => {
@@ -482,7 +427,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors"], () => (__webpack_require__("./examples/app/3.0/index.web.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors"], () => (__webpack_require__("./examples/app/2.0/b/index.web.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

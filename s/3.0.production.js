@@ -1,1 +1,1 @@
-module.exports={__VERSION__:"3.0.production",__ENTRIES__:{"index.node.js":"index.node.9dccde77db11fad77b35.js"},__ROUTES__:[{pattern:"/(.*)",entry:()=>"index.node"}]};
+module.exports={__VERSION__:"3.0.production",__ENTRIES__:{"index.node.js":"index.node.6167d1a234ea7c5425c3.js"},__ROUTES__:[{pattern:"/(.*)",entry:()=>"index.node"}]};

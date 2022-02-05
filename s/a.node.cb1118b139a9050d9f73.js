@@ -751,9 +751,9 @@ var unitlessKeys = {
 
 /***/ }),
 
-/***/ "./examples/app/1.0/a/App.jsx":
+/***/ "./examples/app/2.0/a/App.jsx":
 /*!************************************!*\
-  !*** ./examples/app/1.0/a/App.jsx ***!
+  !*** ./examples/app/2.0/a/App.jsx ***!
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -762,7 +762,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "App": () => (/* binding */ App)
 /* harmony export */ });
-/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.css */ "./examples/app/1.0/a/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../App.css */ "./examples/app/2.0/App.css");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common */ "./examples/app/2.0/common.jsx");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
@@ -774,28 +775,59 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const DivWrapper = /*#__PURE__*/styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
-  displayName: "App__DivWrapper",
-  componentId: "sc-ljiusp-0"
-})(["display:flex;flex-direction:column;font-family:sans-serif;font-size:40px;align-items:center;justify-content:center;height:inherit;img{width:96px;height:96px;}code{font-size:.5em;}"]);
 
-function Code(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("code", {
-    children: ["name: ", "react-ssr-webpack-plugin", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), "server.url.href: ", props.url.href, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), "__VERSION__: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
-      href: `${__webpack_require__.p}${props.__VERSION__}.js`,
-      children: props.__VERSION__
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {})]
+const DivWrapperA = /*#__PURE__*/(0,styled_components__WEBPACK_IMPORTED_MODULE_4__["default"])(_common__WEBPACK_IMPORTED_MODULE_5__.DivWrapper).withConfig({
+  displayName: "App__DivWrapperA",
+  componentId: "sc-lq4rwr-0"
+})(["text-align:center;"]);
+function App(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react__WEBPACK_IMPORTED_MODULE_1__.StrictMode, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(DivWrapperA, {
+      flexDirection: "column",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+        src: _react_svg__WEBPACK_IMPORTED_MODULE_2__["default"]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common__WEBPACK_IMPORTED_MODULE_5__.Code, { ...props,
+        href: "b.node"
+      })]
+    })
   });
 }
 
-function App(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react__WEBPACK_IMPORTED_MODULE_1__.StrictMode, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(DivWrapper, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-        src: _react_svg__WEBPACK_IMPORTED_MODULE_2__["default"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Code, { ...props
-      })]
-    })
+/***/ }),
+
+/***/ "./examples/app/2.0/common.jsx":
+/*!*************************************!*\
+  !*** ./examples/app/2.0/common.jsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DivWrapper": () => (/* binding */ DivWrapper),
+/* harmony export */   "Code": () => (/* binding */ Code)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _Code_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Code.css */ "./examples/app/2.0/Code.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+const DivWrapper = /*#__PURE__*/styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "common__DivWrapper",
+  componentId: "sc-1o9hep8-0"
+})(["display:flex;flex-direction:", ";font-family:sans-serif;font-size:40px;align-items:center;justify-content:center;height:inherit;img{width:96px;height:96px;margin:.5rem;}code{font-size:.5em;margin:.5rem;}"], props => props.flexDirection);
+function Code(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("code", {
+    className: _Code_css__WEBPACK_IMPORTED_MODULE_0__["default"].code,
+    children: ["name: ", "react-ssr-webpack-plugin", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "server.url.href: ", props.url.href, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "__VERSION__: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: `${__webpack_require__.p}${props.__VERSION__}.js`,
+      children: props.__VERSION__
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: `${props.href}${props.url.search || ""}`,
+      children: props.href
+    })]
   });
 }
 
@@ -2874,10 +2906,10 @@ if ($defineProperty) {
 
 /***/ }),
 
-/***/ "./examples/app/1.0/a/App.css":
-/*!************************************!*\
-  !*** ./examples/app/1.0/a/App.css ***!
-  \************************************/
+/***/ "./examples/app/2.0/App.css":
+/*!**********************************!*\
+  !*** ./examples/app/2.0/App.css ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2888,6 +2920,25 @@ __webpack_require__.r(__webpack_exports__);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
 
+});
+
+
+/***/ }),
+
+/***/ "./examples/app/2.0/Code.css":
+/*!***********************************!*\
+  !*** ./examples/app/2.0/Code.css ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+	"code": "FaDczDYAnfDilHrvDCQZ"
 });
 
 
@@ -27562,7 +27613,7 @@ module.exports = $gOPD;
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "//assets.woodfung.dev/s";
+/******/ 		__webpack_require__.p = "//assets.woodfung.dev/s/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -27571,14 +27622,14 @@ var __webpack_exports__ = {};
 (() => {
 "use strict";
 /*!******************************************!*\
-  !*** ./examples/app/1.0/a/index.node.js ***!
+  !*** ./examples/app/2.0/a/index.node.js ***!
   \******************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom/server */ "./node_modules/react-dom/server.js");
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./examples/app/1.0/a/App.jsx");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./examples/app/2.0/a/App.jsx");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
@@ -27589,7 +27640,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (async (props = {}) => {
   const sheet = new styled_components__WEBPACK_IMPORTED_MODULE_2__.ServerStyleSheet();
   const div = (0,react_dom_server__WEBPACK_IMPORTED_MODULE_0__.renderToString)(sheet.collectStyles( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_App__WEBPACK_IMPORTED_MODULE_3__.App, { ...props
-  }))); // there is no point to dynamicially change the head tag at runtime
+  }))); // there is no point to dynamicially change the head at runtime
   // when users share a link, crawler will hit that link again
 
   const body = "<!DOCTYPE html>" + (0,react_dom_server__WEBPACK_IMPORTED_MODULE_0__.renderToStaticMarkup)( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("html", {
@@ -27604,11 +27655,15 @@ __webpack_require__.r(__webpack_exports__);
         href: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("style", {
         dangerouslySetInnerHTML: {
-          "__html": "/*!******************************************************************************************!*\\\n  !*** css ./node_modules/css-loader/dist/cjs.js??css-loader!./examples/app/1.0/a/App.css ***!\n  \\******************************************************************************************/\n* {\n  margin: 0;\n}\n\nhtml,\nbody,\nbody > div {\n  height: 100%;\n}\n\n"
+          "__html": "/*!****************************************************************************************!*\\\n  !*** css ./node_modules/css-loader/dist/cjs.js??css-loader!./examples/app/2.0/App.css ***!\n  \\****************************************************************************************/\n* {\n  margin: 0;\n}\n\nhtml,\nbody,\nbody > div {\n  height: 100%;\n}\n\n/*!*****************************************************************************************!*\\\n  !*** css ./node_modules/css-loader/dist/cjs.js??css-loader!./examples/app/2.0/Code.css ***!\n  \\*****************************************************************************************/\n.FaDczDYAnfDilHrvDCQZ {\n  color: #e83e8c;\n  font-family: SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n}\n\n"
         }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("script", {
         dangerouslySetInnerHTML: {
           "__html": `globalThis.props = ${JSON.stringify(props).replace(/</g, "\\u003c")}`
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("script", {
+        dangerouslySetInnerHTML: {
+          "__html": "/******/ (() => { // webpackBootstrap\n/******/ \t\"use strict\";\n/******/ \tvar __webpack_modules__ = ({\n\n/***/ \"./examples/app/2.0/a/App.jsx\":\n/*!************************************!*\\\n  !*** ./examples/app/2.0/a/App.jsx ***!\n  \\************************************/\n/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {\n\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"App\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../App.css */ \"./examples/app/2.0/App.css\");\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common */ \"./examples/app/2.0/common.jsx\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n/* harmony import */ var _react_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../react.svg */ \"./examples/app/react.svg\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n\n\n\n\n\n\n\nconst DivWrapperA = /*#__PURE__*/(0,styled_components__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(_common__WEBPACK_IMPORTED_MODULE_5__.DivWrapper).withConfig({\n  displayName: \"App__DivWrapperA\",\n  componentId: \"sc-lq4rwr-0\"\n})([\"text-align:center;\"]);\nfunction App(props) {\n  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react__WEBPACK_IMPORTED_MODULE_1__.StrictMode, {\n    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(DivWrapperA, {\n      flexDirection: \"column\",\n      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(\"img\", {\n        src: _react_svg__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common__WEBPACK_IMPORTED_MODULE_5__.Code, { ...props,\n        href: \"b.node\"\n      })]\n    })\n  });\n}\n\n/***/ }),\n\n/***/ \"./examples/app/2.0/a/index.web.js\":\n/*!*****************************************!*\\\n  !*** ./examples/app/2.0/a/index.web.js ***!\n  \\*****************************************/\n/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {\n\n__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ \"./examples/app/2.0/a/App.jsx\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/profiling.js\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n\n\n\nconst worker = new Worker(new URL(/* worker import */ __webpack_require__.p + __webpack_require__.u(\"examples_app_2_0_a_worker_js\"), __webpack_require__.b)); // eslint-disable-next-line no-console\n\nworker.onmessage = console.log;\nreact_dom__WEBPACK_IMPORTED_MODULE_0__.hydrateRoot(document.getElementById(\"root\"), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_App__WEBPACK_IMPORTED_MODULE_2__.App, { ...globalThis.props\n}));\n\n/***/ }),\n\n/***/ \"./examples/app/2.0/common.jsx\":\n/*!*************************************!*\\\n  !*** ./examples/app/2.0/common.jsx ***!\n  \\*************************************/\n/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {\n\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"DivWrapper\": () => (/* binding */ DivWrapper),\n/* harmony export */   \"Code\": () => (/* binding */ Code)\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n/* harmony import */ var _Code_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Code.css */ \"./examples/app/2.0/Code.css\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n\n\n\n\nconst DivWrapper = /*#__PURE__*/styled_components__WEBPACK_IMPORTED_MODULE_2__[\"default\"].div.withConfig({\n  displayName: \"common__DivWrapper\",\n  componentId: \"sc-1o9hep8-0\"\n})([\"display:flex;flex-direction:\", \";font-family:sans-serif;font-size:40px;align-items:center;justify-content:center;height:inherit;img{width:96px;height:96px;margin:.5rem;}code{font-size:.5em;margin:.5rem;}\"], props => props.flexDirection);\nfunction Code(props) {\n  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(\"code\", {\n    className: _Code_css__WEBPACK_IMPORTED_MODULE_0__[\"default\"].code,\n    children: [\"name: \", \"react-ssr-webpack-plugin\", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(\"br\", {}), \"server.url.href: \", props.url.href, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(\"br\", {}), \"__VERSION__: \", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(\"a\", {\n      href: `${__webpack_require__.p}${props.__VERSION__}.js`,\n      children: props.__VERSION__\n    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(\"br\", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(\"a\", {\n      href: `${props.href}${props.url.search || \"\"}`,\n      children: props.href\n    })]\n  });\n}\n\n/***/ }),\n\n/***/ \"./examples/app/react.svg\":\n/*!********************************!*\\\n  !*** ./examples/app/react.svg ***!\n  \\********************************/\n/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {\n\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"928f956d9c8ebcffb98a8e917154a81a.svg\");\n\n/***/ }),\n\n/***/ \"./examples/app/2.0/App.css\":\n/*!**********************************!*\\\n  !*** ./examples/app/2.0/App.css ***!\n  \\**********************************/\n/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {\n\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});\n\n/***/ }),\n\n/***/ \"./examples/app/2.0/Code.css\":\n/*!***********************************!*\\\n  !*** ./examples/app/2.0/Code.css ***!\n  \\***********************************/\n/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {\n\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"code\":\"FaDczDYAnfDilHrvDCQZ\"});\n\n/***/ })\n\n/******/ \t});\n/************************************************************************/\n/******/ \t// The module cache\n/******/ \tvar __webpack_module_cache__ = {};\n/******/ \t\n/******/ \t// The require function\n/******/ \tfunction __webpack_require__(moduleId) {\n/******/ \t\t// Check if module is in cache\n/******/ \t\tvar cachedModule = __webpack_module_cache__[moduleId];\n/******/ \t\tif (cachedModule !== undefined) {\n/******/ \t\t\treturn cachedModule.exports;\n/******/ \t\t}\n/******/ \t\t// Create a new module (and put it into the cache)\n/******/ \t\tvar module = __webpack_module_cache__[moduleId] = {\n/******/ \t\t\tid: moduleId,\n/******/ \t\t\tloaded: false,\n/******/ \t\t\texports: {}\n/******/ \t\t};\n/******/ \t\n/******/ \t\t// Execute the module function\n/******/ \t\t__webpack_modules__[moduleId](module, module.exports, __webpack_require__);\n/******/ \t\n/******/ \t\t// Flag the module as loaded\n/******/ \t\tmodule.loaded = true;\n/******/ \t\n/******/ \t\t// Return the exports of the module\n/******/ \t\treturn module.exports;\n/******/ \t}\n/******/ \t\n/******/ \t// expose the modules object (__webpack_modules__)\n/******/ \t__webpack_require__.m = __webpack_modules__;\n/******/ \t\n/************************************************************************/\n/******/ \t/* webpack/runtime/chunk loaded */\n/******/ \t(() => {\n/******/ \t\tvar deferred = [];\n/******/ \t\t__webpack_require__.O = (result, chunkIds, fn, priority) => {\n/******/ \t\t\tif(chunkIds) {\n/******/ \t\t\t\tpriority = priority || 0;\n/******/ \t\t\t\tfor(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];\n/******/ \t\t\t\tdeferred[i] = [chunkIds, fn, priority];\n/******/ \t\t\t\treturn;\n/******/ \t\t\t}\n/******/ \t\t\tvar notFulfilled = Infinity;\n/******/ \t\t\tfor (var i = 0; i < deferred.length; i++) {\n/******/ \t\t\t\tvar [chunkIds, fn, priority] = deferred[i];\n/******/ \t\t\t\tvar fulfilled = true;\n/******/ \t\t\t\tfor (var j = 0; j < chunkIds.length; j++) {\n/******/ \t\t\t\t\tif ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {\n/******/ \t\t\t\t\t\tchunkIds.splice(j--, 1);\n/******/ \t\t\t\t\t} else {\n/******/ \t\t\t\t\t\tfulfilled = false;\n/******/ \t\t\t\t\t\tif(priority < notFulfilled) notFulfilled = priority;\n/******/ \t\t\t\t\t}\n/******/ \t\t\t\t}\n/******/ \t\t\t\tif(fulfilled) {\n/******/ \t\t\t\t\tdeferred.splice(i--, 1)\n/******/ \t\t\t\t\tvar r = fn();\n/******/ \t\t\t\t\tif (r !== undefined) result = r;\n/******/ \t\t\t\t}\n/******/ \t\t\t}\n/******/ \t\t\treturn result;\n/******/ \t\t};\n/******/ \t})();\n/******/ \t\n/******/ \t/* webpack/runtime/compat get default export */\n/******/ \t(() => {\n/******/ \t\t// getDefaultExport function for compatibility with non-harmony modules\n/******/ \t\t__webpack_require__.n = (module) => {\n/******/ \t\t\tvar getter = module && module.__esModule ?\n/******/ \t\t\t\t() => (module['default']) :\n/******/ \t\t\t\t() => (module);\n/******/ \t\t\t__webpack_require__.d(getter, { a: getter });\n/******/ \t\t\treturn getter;\n/******/ \t\t};\n/******/ \t})();\n/******/ \t\n/******/ \t/* webpack/runtime/define property getters */\n/******/ \t(() => {\n/******/ \t\t// define getter functions for harmony exports\n/******/ \t\t__webpack_require__.d = (exports, definition) => {\n/******/ \t\t\tfor(var key in definition) {\n/******/ \t\t\t\tif(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {\n/******/ \t\t\t\t\tObject.defineProperty(exports, key, { enumerable: true, get: definition[key] });\n/******/ \t\t\t\t}\n/******/ \t\t\t}\n/******/ \t\t};\n/******/ \t})();\n/******/ \t\n/******/ \t/* webpack/runtime/get javascript chunk filename */\n/******/ \t(() => {\n/******/ \t\t// This function allow to reference async chunks\n/******/ \t\t__webpack_require__.u = (chunkId) => {\n/******/ \t\t\t// return url for filenames based on template\n/******/ \t\t\treturn \"\" + chunkId + \".\" + \"0e8de54381b938c5a397\" + \".js\";\n/******/ \t\t};\n/******/ \t})();\n/******/ \t\n/******/ \t/* webpack/runtime/hasOwnProperty shorthand */\n/******/ \t(() => {\n/******/ \t\t__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))\n/******/ \t})();\n/******/ \t\n/******/ \t/* webpack/runtime/make namespace object */\n/******/ \t(() => {\n/******/ \t\t// define __esModule on exports\n/******/ \t\t__webpack_require__.r = (exports) => {\n/******/ \t\t\tif(typeof Symbol !== 'undefined' && Symbol.toStringTag) {\n/******/ \t\t\t\tObject.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });\n/******/ \t\t\t}\n/******/ \t\t\tObject.defineProperty(exports, '__esModule', { value: true });\n/******/ \t\t};\n/******/ \t})();\n/******/ \t\n/******/ \t/* webpack/runtime/node module decorator */\n/******/ \t(() => {\n/******/ \t\t__webpack_require__.nmd = (module) => {\n/******/ \t\t\tmodule.paths = [];\n/******/ \t\t\tif (!module.children) module.children = [];\n/******/ \t\t\treturn module;\n/******/ \t\t};\n/******/ \t})();\n/******/ \t\n/******/ \t/* webpack/runtime/publicPath */\n/******/ \t(() => {\n/******/ \t\t__webpack_require__.p = \"//assets.woodfung.dev/s/\";\n/******/ \t})();\n/******/ \t\n/******/ \t/* webpack/runtime/jsonp chunk loading */\n/******/ \t(() => {\n/******/ \t\t__webpack_require__.b = document.baseURI || self.location.href;\n/******/ \t\t\n/******/ \t\t// object to store loaded and loading chunks\n/******/ \t\t// undefined = chunk not loaded, null = chunk preloaded/prefetched\n/******/ \t\t// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded\n/******/ \t\tvar installedChunks = {\n/******/ \t\t\t\"a.web\": 0\n/******/ \t\t};\n/******/ \t\t\n/******/ \t\t// no chunk on demand loading\n/******/ \t\t\n/******/ \t\t// no prefetching\n/******/ \t\t\n/******/ \t\t// no preloaded\n/******/ \t\t\n/******/ \t\t// no HMR\n/******/ \t\t\n/******/ \t\t// no HMR manifest\n/******/ \t\t\n/******/ \t\t__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);\n/******/ \t\t\n/******/ \t\t// install a JSONP callback for chunk loading\n/******/ \t\tvar webpackJsonpCallback = (parentChunkLoadingFunction, data) => {\n/******/ \t\t\tvar [chunkIds, moreModules, runtime] = data;\n/******/ \t\t\t// add \"moreModules\" to the modules object,\n/******/ \t\t\t// then flag all \"chunkIds\" as loaded and fire callback\n/******/ \t\t\tvar moduleId, chunkId, i = 0;\n/******/ \t\t\tif(chunkIds.some((id) => (installedChunks[id] !== 0))) {\n/******/ \t\t\t\tfor(moduleId in moreModules) {\n/******/ \t\t\t\t\tif(__webpack_require__.o(moreModules, moduleId)) {\n/******/ \t\t\t\t\t\t__webpack_require__.m[moduleId] = moreModules[moduleId];\n/******/ \t\t\t\t\t}\n/******/ \t\t\t\t}\n/******/ \t\t\t\tif(runtime) var result = runtime(__webpack_require__);\n/******/ \t\t\t}\n/******/ \t\t\tif(parentChunkLoadingFunction) parentChunkLoadingFunction(data);\n/******/ \t\t\tfor(;i < chunkIds.length; i++) {\n/******/ \t\t\t\tchunkId = chunkIds[i];\n/******/ \t\t\t\tif(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {\n/******/ \t\t\t\t\tinstalledChunks[chunkId][0]();\n/******/ \t\t\t\t}\n/******/ \t\t\t\tinstalledChunks[chunkId] = 0;\n/******/ \t\t\t}\n/******/ \t\t\treturn __webpack_require__.O(result);\n/******/ \t\t}\n/******/ \t\t\n/******/ \t\tvar chunkLoadingGlobal = self[\"webpackChunkreact_ssr_webpack_plugin\"] = self[\"webpackChunkreact_ssr_webpack_plugin\"] || [];\n/******/ \t\tchunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));\n/******/ \t\tchunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));\n/******/ \t})();\n/******/ \t\n/************************************************************************/\n/******/ \t\n/******/ \t// startup\n/******/ \t// Load entry module and return exports\n/******/ \t// This entry module depends on other loaded chunks and execution need to be delayed\n/******/ \tvar __webpack_exports__ = __webpack_require__.O(undefined, [\"vendors\"], () => (__webpack_require__(\"./examples/app/2.0/a/index.web.js\")))\n/******/ \t__webpack_exports__ = __webpack_require__.O(__webpack_exports__);\n/******/ \t\n/******/ })()\n;"
         }
       }), sheet.getStyleElement()]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("body", {
@@ -27620,10 +27675,6 @@ __webpack_require__.r(__webpack_exports__);
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("script", {
         integrity: "sha256-WC8aIua/MITNdIo9yaxA8Z3NAQPOHuH3tWB8gCKhkvE=",
         src: `${__webpack_require__.p}${"vendors.28b60825264cfb620e92.js"}`,
-        crossOrigin: "anonymous"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("script", {
-        integrity: "sha256-Wbym3k1Ua3qbrY70Ka4cdv9diVErcOci3YeRcAZ4vbw=",
-        src: `${__webpack_require__.p}${"a.web.0e94d6f387de0c2c9a4b.js"}`,
         crossOrigin: "anonymous"
       })]
     })]

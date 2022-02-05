@@ -1,1 +1,1 @@
-module.exports={__VERSION__:"2.0.production",__ENTRIES__:{"a.node.js":"a.node.c5f275d6660a47d554c4.js","b.node.js":"b.node.31896cef731706919e9b.js"},__ROUTES__:[{pattern:"/:entry",entry:({params:e})=>e.entry}]};
+module.exports={__VERSION__:"2.0.production",__ENTRIES__:{"a.node.js":"a.node.106a9ee6be59be8749bc.js","b.node.js":"b.node.c4a3be72abee22660e75.js"},__ROUTES__:[{pattern:"/:entry",entry:({params:e})=>e.entry}]};
