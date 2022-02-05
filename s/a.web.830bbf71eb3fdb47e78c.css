@@ -1,0 +1,21 @@
+/*!****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??css-loader!./examples/app/2.0/App.css ***!
+  \****************************************************************************************/
+* {
+  margin: 0;
+}
+
+html,
+body,
+body > div {
+  height: 100%;
+}
+
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??css-loader!./examples/app/2.0/Code.css ***!
+  \*****************************************************************************************/
+.FaDczDYAnfDilHrvDCQZ {
+  color: #e83e8c;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+

@@ -1,8 +1,8 @@
 module.exports = {
   __VERSION__: "2.0.development",
   __ENTRIES__: {
-    "a.node.js": "a.node.063dea6c055a29da7836.js",
-    "b.node.js": "b.node.5474315122dbb28a3cea.js",
+    "a.node.js": "a.node.cb1118b139a9050d9f73.js",
+    "b.node.js": "b.node.a764b29586f580e8cd4d.js",
   },
   __ROUTES__: [
     {

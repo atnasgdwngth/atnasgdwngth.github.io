@@ -762,39 +762,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "App": () => (/* binding */ App)
 /* harmony export */ });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _react_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../react.svg */ "./examples/app/react.svg");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.css */ "./examples/app/1.0/a/App.css");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _react_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../react.svg */ "./examples/app/react.svg");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
 
-const DivWrapper = /*#__PURE__*/styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+
+const DivWrapper = /*#__PURE__*/styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "App__DivWrapper",
   componentId: "sc-ljiusp-0"
 })(["display:flex;flex-direction:column;font-family:sans-serif;font-size:40px;align-items:center;justify-content:center;height:inherit;img{width:96px;height:96px;}code{font-size:.5em;}"]);
-const GlobalStyle = /*#__PURE__*/(0,styled_components__WEBPACK_IMPORTED_MODULE_3__.createGlobalStyle)(["*{margin:0;}html,body,body>div{height:100%;}"]);
 
 function Code(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("code", {
-    children: ["name: ", "react-ssr-webpack-plugin", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "server.url.href: ", props.url.href, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "__VERSION__: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("code", {
+    children: ["name: ", "react-ssr-webpack-plugin", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), "server.url.href: ", props.url.href, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), "__VERSION__: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
       href: `${__webpack_require__.p}${props.__VERSION__}.js`,
       children: props.__VERSION__
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {})]
   });
 }
 
 function App(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react__WEBPACK_IMPORTED_MODULE_0__.StrictMode, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(GlobalStyle, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(DivWrapper, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-        src: _react_svg__WEBPACK_IMPORTED_MODULE_1__["default"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Code, { ...props
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react__WEBPACK_IMPORTED_MODULE_1__.StrictMode, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(DivWrapper, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+        src: _react_svg__WEBPACK_IMPORTED_MODULE_2__["default"]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Code, { ...props
       })]
-    })]
+    })
   });
 }
 
@@ -2869,6 +2870,25 @@ if ($defineProperty) {
 } else {
 	module.exports.apply = applyBind;
 }
+
+
+/***/ }),
+
+/***/ "./examples/app/1.0/a/App.css":
+/*!************************************!*\
+  !*** ./examples/app/1.0/a/App.css ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+
+});
 
 
 /***/ }),
@@ -27582,6 +27602,10 @@ __webpack_require__.r(__webpack_exports__);
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("link", {
         rel: "icon",
         href: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("style", {
+        dangerouslySetInnerHTML: {
+          "__html": "/*!******************************************************************************************!*\\\n  !*** css ./node_modules/css-loader/dist/cjs.js??css-loader!./examples/app/1.0/a/App.css ***!\n  \\******************************************************************************************/\n* {\n  margin: 0;\n}\n\nhtml,\nbody,\nbody > div {\n  height: 100%;\n}\n\n"
+        }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("script", {
         dangerouslySetInnerHTML: {
           "__html": `globalThis.props = ${JSON.stringify(props).replace(/</g, "\\u003c")}`
@@ -27598,8 +27622,8 @@ __webpack_require__.r(__webpack_exports__);
         src: `${__webpack_require__.p}${"vendors.28b60825264cfb620e92.js"}`,
         crossOrigin: "anonymous"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("script", {
-        integrity: "sha256-ihOwhv8fi6aIfeuNyHSbv4ioRzJdWHIm+eW6PVORnKw=",
-        src: `${__webpack_require__.p}${"a.web.633a45bc2f11fffc4f28.js"}`,
+        integrity: "sha256-QtNNFG3uwqZRGSVOpsAvNVN8c0DHDhu926Sg6Gzp8B8=",
+        src: `${__webpack_require__.p}${"a.web.9ac58113b7a3a17dce00.js"}`,
         crossOrigin: "anonymous"
       })]
     })]
