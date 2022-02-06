@@ -27682,7 +27682,7 @@ __webpack_require__.r(__webpack_exports__);
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("link", {
         integrity: "sha256-rvmNNK5yCoANXih+NJGlpHBBaQRuUu4NoxtwwjDRb90=",
         rel: "stylesheet",
-        href: `${__webpack_require__.p}/${"b.web.830bbf71eb3fdb47e78c.css"}`
+        href: `${__webpack_require__.p}${"b.web.830bbf71eb3fdb47e78c.css"}`
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("script", {
         dangerouslySetInnerHTML: {
           "__html": `globalThis.props = ${JSON.stringify(props).replace(/</g, "\\u003c")}`
@@ -27700,7 +27700,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("script", {
         integrity: "sha256-WC8aIua/MITNdIo9yaxA8Z3NAQPOHuH3tWB8gCKhkvE=",
-        src: `${__webpack_require__.p}/${"vendors.28b60825264cfb620e92.js"}`,
+        src: `${__webpack_require__.p}${"vendors.28b60825264cfb620e92.js"}`,
         crossOrigin: "anonymous"
       })]
     })]
